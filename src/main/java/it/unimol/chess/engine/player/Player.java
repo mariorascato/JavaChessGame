@@ -1,5 +1,6 @@
 package it.unimol.chess.engine.player;
 
+import it.unimol.chess.engine.Alliance;
 import it.unimol.chess.engine.board.Board;
 import it.unimol.chess.engine.board.Move;
 import it.unimol.chess.engine.pieces.King;
@@ -29,5 +30,27 @@ public abstract class Player {
         }
         throw new RuntimeException("Non dovresti essere qui! Non è una Board valida");
     }
+    public boolean isMoveLegal(final Move move){
+        return this.legalMoves.contains(move);
+    }
+    //TO DO (implementare tutti e 5 i metodi)
+    public boolean isInCheck(){
+        return false;
+    }
+    public boolean isInCheckMate(){
+        return false;
+    }
+    public boolean isInStaleMate(){
+        return false;
+    }
+    public boolean isCastled(){
+        return false;
+    }
+    public MoveTransition makeMove(final Move move){
+        return null;
+    }
+
     public abstract Collection<Piece> getActivePieces();
+    public abstract Alliance getAlliance();
+    public abstract Player getOpponent();
 }
