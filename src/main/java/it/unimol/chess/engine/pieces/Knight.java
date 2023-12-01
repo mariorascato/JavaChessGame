@@ -15,7 +15,7 @@ import java.util.List;
 public class Knight extends Piece {
 
     private final static int[] CANDIDATE_MOVE_COORDINATES = {-17,-15,-10,-6,6,10,15,17};
-    Knight(int piecePosition, Alliance pieceAlliance) {
+    public Knight( Alliance pieceAlliance, int piecePosition) {
         super(piecePosition, pieceAlliance);
     }
 
