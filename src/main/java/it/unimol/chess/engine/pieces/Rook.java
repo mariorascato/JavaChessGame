@@ -56,6 +56,9 @@ public class Rook extends Piece{
     public String toString(){
         return PieceType.ROOK.toString();
     }
+    public Rook movePiece(final Move move) {
+        return new Rook(move.getMovedPiece().getPieceAlliance(), move.getDestinationCoordinate());
+    }
     private static boolean isFirstcolumnExclusion(final int currentPosition , final int candidateOffset){
         return BoardUtils.FIRST_COLUMN[currentPosition] && (candidateOffset == -1 );
     }
