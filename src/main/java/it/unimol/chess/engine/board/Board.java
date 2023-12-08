@@ -1,6 +1,7 @@
 package it.unimol.chess.engine.board;
 
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.Iterables;
 import it.unimol.chess.engine.Alliance;
 import it.unimol.chess.engine.pieces.Piece;
 import it.unimol.chess.engine.pieces.*;
@@ -140,6 +141,11 @@ public class Board {
 
         return builder.build();
     }
+
+    public Iterable<Move> getAllLegalMoves() {
+        return Iterables.unmodifiableIterable(Iterables.concat(this.whitePlayer.getLegalMoves(),this.blackPlayer.getLegalMoves()));
+    }
+
     public static class Builder {
 
         Map<Integer, Piece> boardConfig;
