@@ -6,10 +6,13 @@ import it.unimol.chess.engine.board.Board;
 import it.unimol.chess.engine.board.Move;
 import it.unimol.chess.engine.board.Tile;
 import it.unimol.chess.engine.pieces.Piece;
+import it.unimol.chess.engine.pieces.Rook;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import static it.unimol.chess.engine.board.Move.*;
 
 public class WhitePlayer extends Player{
     public WhitePlayer(final Board board,
@@ -34,7 +37,8 @@ public class WhitePlayer extends Player{
     }
 
     @Override
-    protected Collection<Move> calculateKingCastles(Collection<Move> playerlegals, Collection<Move> opponentsLegals) {
+    protected Collection<Move> calculateKingCastles(final Collection<Move> playerlegals,
+                                                    final Collection<Move> opponentsLegals) {
         // PARTE BIANCA DEL KING
         final List<Move> kingCastels = new ArrayList<>();
         if(this.playerKing.isFirstMove() && !this.isInCheck()) {
@@ -45,8 +49,12 @@ public class WhitePlayer extends Player{
                     if(Player.calculateAttackOnTile(61,opponentsLegals).isEmpty() &&
                        Player.calculateAttackOnTile(62, opponentsLegals).isEmpty() &&
                        rookTile.getPiece().getPieceType().isRook()) {
-                        //TODO AGGIUNGERE A CASTLEMOVE
-                        kingCastels.add(null);
+                        kingCastels.add(new KingSideCastleMove(this.board,
+                                this.playerKing,
+                                62,
+                                (Rook) rookTile.getPiece(),
+                                rookTile.getTileCoordinate(),
+                                61 ));
                     }
 
                 }
@@ -57,12 +65,14 @@ public class WhitePlayer extends Player{
 
                 final Tile rookTile = this.board.getTile(56);
                 if(rookTile.isTileOccupied() && rookTile.getPiece().isFirstMove()) {
-                    //TODO AGGIUNGERE CASTLEMOVE
-                    kingCastels.add(null);
+                    kingCastels.add(new QueenSideCastleMove(this.board,
+                            this.playerKing,58,
+                            (Rook)rookTile.getPiece(),
+                            rookTile.getTileCoordinate(),
+                            59 ));
                 }
             }
         }
-
         return ImmutableList.copyOf(kingCastels);
     }
 }
