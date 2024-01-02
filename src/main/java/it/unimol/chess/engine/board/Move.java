@@ -103,11 +103,13 @@ public abstract  class Move {
         public boolean equals(final Object other) {
             return this == other || other instanceof MajorMove && super.equals(other);
         }
-        @Override
+       /* todo Implementazione
+
+           @Override
         public String toString() {
             return movedPiece.getPieceType().toString() + BoardUtils.getPositionAtCoordinate(this.destinationCoordinate);
         }
-
+*/
     }
     public static  class AttackMove extends Move {
 
