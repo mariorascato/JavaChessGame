@@ -6,8 +6,10 @@ import it.unimol.chess.engine.player.MoveTransition;
 
 public class MiniMax implements MoveStrategy{
     private final BoardEvaluator boardEvaluator;
-    public MiniMax() {
+    private final int searchDepth;
+    public MiniMax(final int searchDepth) {
         this.boardEvaluator = new StandardBoardEvaluator();
+        this.searchDepth = searchDepth;
     }
 
     @Override
@@ -15,7 +17,7 @@ public class MiniMax implements MoveStrategy{
         return "MiniMax";
     }
     @Override
-    public Move execute(Board board, int depth) {
+    public Move execute(Board board) {
 
         final long  startTime = System.currentTimeMillis();
         Move bestMove = null;
@@ -24,7 +26,7 @@ public class MiniMax implements MoveStrategy{
         int lowestSeenValue = Integer.MAX_VALUE;
         int currentValue;
 
-        System.out.println(board.currentPlayer() + "THINKING with depth = " + depth);
+        System.out.println(board.currentPlayer() + "THINKING with depth = " + this.searchDepth);
 
         int numMoves = board.currentPlayer().getLegalMoves().size();
 
@@ -32,8 +34,8 @@ public class MiniMax implements MoveStrategy{
             final MoveTransition moveTransition = board.currentPlayer().makeMove(move);
             if(moveTransition.getMoveStatus().isDone()) {
                 currentValue = board.currentPlayer().getAlliance().isWhite() ?
-                        min(moveTransition.getTransitionBoard(), depth - 1 ) :
-                        max(moveTransition.getTransitionBoard(), depth - 1);
+                        min(moveTransition.getTransitionBoard(), this.searchDepth - 1 ) :
+                        max(moveTransition.getTransitionBoard(), this.searchDepth - 1);
 
                 if(board.currentPlayer().getAlliance().isWhite() && currentValue >= highestSeenValue) {
                     highestSeenValue = currentValue;
@@ -64,9 +66,13 @@ public class MiniMax implements MoveStrategy{
     }
     return lowestSeenValue;
     }
+    private static boolean isEndGameScenario(final Board board){
+        return board.currentPlayer().isInCheckMate() ||
+               board.currentPlayer().isInStaleMate();
+    }
     public int max(final Board board,
                    final int depth) {
-        if(depth == 0)
+        if(depth == 0 || isEndGameScenario(board))
             return this.boardEvaluator.evaluate(board,depth);
         int highestSeenValue = Integer.MIN_VALUE;
         for(final  Move move : board.currentPlayer().getLegalMoves()) {
