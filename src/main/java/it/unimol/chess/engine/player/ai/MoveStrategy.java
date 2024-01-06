@@ -5,5 +5,6 @@ import it.unimol.chess.engine.board.Move;
 
 public interface MoveStrategy {
     Move execute(Board board);
+    long getNumBoardsEvaluated();
 
 }

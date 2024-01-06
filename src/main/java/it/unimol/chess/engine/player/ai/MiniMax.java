@@ -6,10 +6,12 @@ import it.unimol.chess.engine.player.MoveTransition;
 
 public class MiniMax implements MoveStrategy{
     private final BoardEvaluator boardEvaluator;
+    private long boardsEvaluated;
     private final int searchDepth;
     public MiniMax(final int searchDepth) {
         this.boardEvaluator = new StandardBoardEvaluator();
         this.searchDepth = searchDepth;
+        this.boardsEvaluated = 0;
     }
 
     @Override
@@ -52,8 +54,13 @@ public class MiniMax implements MoveStrategy{
     }
     public int min(final Board board,
                    final int depth) {
-    if(depth == 0)
+    if(depth == 0) {
+        this.boardsEvaluated++;
+        return this.boardEvaluator.evaluate(board, depth);
+    }
+    if(isEndGameScenario(board)) {
         return this.boardEvaluator.evaluate(board,depth);
+    }
     int lowestSeenValue = Integer.MAX_VALUE;
     for(final  Move move : board.currentPlayer().getLegalMoves()) {
         final MoveTransition moveTransition = board.currentPlayer().makeMove(move);
@@ -72,8 +79,13 @@ public class MiniMax implements MoveStrategy{
     }
     public int max(final Board board,
                    final int depth) {
-        if(depth == 0 || isEndGameScenario(board))
+        if(depth == 0) {
+            this.boardsEvaluated++;
+            return this.boardEvaluator.evaluate(board, depth);
+        }
+        if(isEndGameScenario(board)) {
             return this.boardEvaluator.evaluate(board,depth);
+        }
         int highestSeenValue = Integer.MIN_VALUE;
         for(final  Move move : board.currentPlayer().getLegalMoves()) {
             final MoveTransition moveTransition = board.currentPlayer().makeMove(move);
@@ -85,5 +97,8 @@ public class MiniMax implements MoveStrategy{
             }
         }
         return highestSeenValue;
+    }
+    public long getNumBoardsEvaluated() {
+        return this.boardsEvaluated;
     }
 }
