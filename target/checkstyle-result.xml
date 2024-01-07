@@ -8,8 +8,12 @@
 <error line="7" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.pieces.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="12" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 </file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\board\BoardUtils.java">
+</file>
 <file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\board\Move.java">
 <error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Board.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\board\Tile.java">
 </file>
 <file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Bishop.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
@@ -24,6 +28,8 @@
 <file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Pawn.java">
 <error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 </file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Piece.java">
+</file>
 <file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Queen.java">
 <error line="9" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 </file>
@@ -33,8 +39,20 @@
 <file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\ai\BoardEvaluator.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 </file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\ai\MiniMax.java">
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\ai\MoveStrategy.java">
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\ai\StandardBoardEvaluator.java">
+</file>
 <file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\BlackPlayer.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\MoveStatus.java">
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\MoveTransition.java">
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\Player.java">
 </file>
 <file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\WhitePlayer.java">
 <error line="15" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>

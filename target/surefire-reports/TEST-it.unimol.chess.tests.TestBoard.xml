@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="it.unimol.chess.tests.TestBoard" time="3.405" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="it.unimol.chess.tests.TestBoard" time="3.442" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IT"/>
     <property name="sun.boot.library.path" value="C:\Users\mario\.jdks\corretto-19.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\mario\AppData\Local\Temp\surefire4946408477117831022\surefirebooter-20240106165856071_3.jar C:\Users\mario\AppData\Local\Temp\surefire4946408477117831022 2024-01-06T16-58-55_946-jvmRun1 surefire-20240106165856071_1tmp surefire_0-20240106165856071_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mario\AppData\Local\Temp\surefire8883330921495752093\surefirebooter-20240107143000132_3.jar C:\Users\mario\AppData\Local\Temp\surefire8883330921495752093 2024-01-07T14-30-00_002-jvmRun1 surefire-20240107143000132_1tmp surefire_0-20240107143000132_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mario\IdeaProjects\JavaChessGame\target\test-classes;C:\Users\mario\IdeaProjects\JavaChessGame\target\classes;C:\Users\mario\.m2\repository\com\google\guava\guava\32.1.1-jre\guava-32.1.1-jre.jar;C:\Users\mario\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\mario\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mario\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\mario\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\mario\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\mario\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\mario\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\mario\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mario\AppData\Local\Temp\surefire4946408477117831022\surefirebooter-20240106165856071_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mario\AppData\Local\Temp\surefire8883330921495752093\surefirebooter-20240107143000132_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-FR"/>
@@ -59,10 +59,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="testAlgebreicNotation" classname="it.unimol.chess.tests.TestBoard" time="0.01"/>
-  <testcase name="testFoolsMate" classname="it.unimol.chess.tests.TestBoard" time="3.355">
+  <testcase name="testAlgebreicNotation" classname="it.unimol.chess.tests.TestBoard" time="0.012"/>
+  <testcase name="testFoolsMate" classname="it.unimol.chess.tests.TestBoard" time="3.385">
     <system-out><![CDATA[it.unimol.chess.engine.player.BlackPlayer@18bf3d14THINKING with depth = 4
 ]]></system-out>
   </testcase>
-  <testcase name="testInvalidBoard" classname="it.unimol.chess.tests.TestBoard" time="0.0"/>
+  <testcase name="testInvalidBoard" classname="it.unimol.chess.tests.TestBoard" time="0.001"/>
 </testsuite>
