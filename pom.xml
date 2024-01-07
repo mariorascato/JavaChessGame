@@ -33,7 +33,7 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <configLocation>C:\Users\mario\IdeaProjects\JavaChessGame\checkstyle.xml</configLocation>
+                    <configLocation>checkstyle.xml</configLocation>
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>false</failsOnError>
                     <failOnViolation>false</failOnViolation>
