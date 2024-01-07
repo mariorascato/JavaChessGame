@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.19">
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\Alliance.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\board\Board.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="7" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.pieces.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="12" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\board\Move.java">
+<error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Board.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Bishop.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="9" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\King.java">
+<error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Knight.java">
+<error line="9" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Pawn.java">
+<error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Queen.java">
+<error line="9" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\pieces\Rook.java">
+<error line="9" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\ai\BoardEvaluator.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\BlackPlayer.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\engine\player\WhitePlayer.java">
+<error line="15" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.engine.board.Move.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\gui\GameHistoryPanel.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="7" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - javax.swing.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="9" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.awt.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\gui\GameSetup.java">
+<error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - javax.swing.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="9" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.awt.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\gui\Table.java">
+<error line="14" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - javax.swing.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="15" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.awt.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="23" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\gui\TakenPiecesPanel.java">
+<error line="8" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - javax.swing.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="10" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.awt.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="14" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="17" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - it.unimol.chess.gui.Table.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="C:\Users\mario\IdeaProjects\JavaChessGame\src\main\java\it\unimol\chess\JChess.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+</checkstyle>
